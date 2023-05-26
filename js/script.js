@@ -14,6 +14,8 @@ let finalJogo = false;
 
 // Click botão 1
 function clickBtn1(){
+    jogadas++;
+    
     let btn = document.getElementById('btn1');
 
     if(btn.value == " " && !finalJogo) {
@@ -33,6 +35,8 @@ function clickBtn1(){
 
 // Click botão 2
 function clickBtn2(){
+    jogadas++;
+
     let btn = document.getElementById('btn2');
 
     if(btn.value == ' ' && !finalJogo) {
@@ -52,6 +56,8 @@ function clickBtn2(){
 
 //Click botão 3
 function clickBtn3(){
+    jogadas++;
+    
     let btn = document.getElementById('btn3');
 
     if(btn.value == ' ' && !finalJogo) {
@@ -71,6 +77,8 @@ function clickBtn3(){
 
 //Click botão 4
 function clickBtn4(){
+    jogadas++;
+    
     let btn = document.getElementById('btn4');
 
     if(btn.value == ' ' && !finalJogo) {
@@ -89,6 +97,8 @@ function clickBtn4(){
 
 //Click botão 5
 function clickBtn5(){
+    jogadas++;
+    
     let btn = document.getElementById('btn5');
 
     if(btn.value == ' ' && !finalJogo) {
@@ -108,6 +118,8 @@ function clickBtn5(){
 
 //Click botão 6
 function clickBtn6(){
+    jogadas++;
+    
     let btn = document.getElementById('btn6');
 
     if(btn.value == ' ' && !finalJogo) {
@@ -127,6 +139,8 @@ function clickBtn6(){
 
 //Click botão 7
 function clickBtn7(){
+    jogadas++;
+    
     let btn = document.getElementById('btn7');
 
     if(btn.value == ' ' && !finalJogo) {
@@ -146,6 +160,8 @@ function clickBtn7(){
 
 //Click botão 8
 function clickBtn8(){
+    jogadas++;
+    
     let btn = document.getElementById('btn8');
 
     if(btn.value == ' ' && !finalJogo) {
@@ -165,6 +181,8 @@ function clickBtn8(){
 
 //Click botão 9
 function clickBtn9(){
+    jogadas++;
+    
     let btn = document.getElementById('btn9');
 
     if(btn.value == ' ' && !finalJogo) {
@@ -192,96 +210,107 @@ function verificaGanhador() {
         finalJogo = true;
         lblJogador.innerText = 'O Jogador X Ganhou!';
         lblJogadas.innerText = '';
-        //alert('O Jogador X ganhou!')
+        return;
     }
     if(btn4=='X' && btn5=='X' && btn6=='X'){
         finalJogo = true;
         lblJogador.innerText = 'O Jogador X Ganhou!';
         lblJogadas.innerText = '';
-        //alert('O Jogador X ganhou!')
+        return;
     }
     if(btn7=='X' && btn8=='X' && btn9=='X'){
         finalJogo = true;
         lblJogador.innerText = 'O Jogador X Ganhou!';
         lblJogadas.innerText = '';
-        //alert('O Jogador X ganhou!')
+        return;
     }
     if(btn1=='X' && btn4=='X' && btn7=='X'){
         finalJogo = true;
         lblJogador.innerText = 'O Jogador X Ganhou!';
         lblJogadas.innerText = '';
-        //alert('O Jogador X ganhou!')
+        return;
     }
     if(btn2=='X' && btn5=='X' && btn8=='X'){
         finalJogo = true;
         lblJogador.innerText = 'O Jogador X Ganhou!';
         lblJogadas.innerText = '';
-        //alert('O Jogador X ganhou!')
+        return;
     }
     if(btn3=='X' && btn6=='X' && btn9=='X'){
         finalJogo = true;
         lblJogador.innerText = 'O Jogador X Ganhou!';
         lblJogadas.innerText = '';
-        //alert('O Jogador X ganhou!')
+        return;
     }
     if(btn1=='X' && btn5=='X' && btn9=='X'){
         finalJogo = true;
         lblJogador.innerText = 'O Jogador X Ganhou!';
         lblJogadas.innerText = '';
-        //alert('O Jogador X ganhou!')
+        return;
     }
     if(btn3=='X' && btn5=='X' && btn7=='X'){
         finalJogo = true;
         lblJogador.innerText = 'O Jogador X Ganhou!';
         lblJogadas.innerText = '';
-        //alert('O Jogador X ganhou!')
+        return;
     }
+    
+    // Verifica se o jogador O ganhou.
     if(btn1=='O' && btn2=='O' && btn3=='O'){
         finalJogo = true;
         lblJogador.innerText = 'O Jogador O Ganhou!';
         lblJogadas.innerText = '';
-        //alert('O Jogador O ganhou!')
+        return;
     }
     if(btn4=='O' && btn5=='O' && btn6=='O'){
         finalJogo = true;
         lblJogador.innerText = 'O Jogador O Ganhou!';
         lblJogadas.innerText = '';
-        //alert('O Jogador O ganhou!')
+        return;
     }
     if(btn7=='O' && btn8=='O' && btn9=='O'){
         finalJogo = true;
         lblJogador.innerText = 'O Jogador O Ganhou!';
         lblJogadas.innerText = '';
-        //alert('O Jogador O ganhou!')
+        return;
     }
     if(btn1=='O' && btn5=='O' && btn9=='O'){
         finalJogo = true;
         lblJogador.innerText = 'O Jogador O Ganhou!';
         lblJogadas.innerText = '';
-        //alert('O Jogador O ganhou!')
+        return;
     }
     if(btn3=='O' && btn5=='O' && btn7=='O'){
         finalJogo = true;
         lblJogador.innerText = 'O Jogador O Ganhou!';
         lblJogadas.innerText = '';
-        //alert('O Jogador O ganhou!')
+        return;
     }
     if(btn1=='O' && btn4=='O' && btn7=='O'){
         finalJogo = true;
         lblJogador.innerText = 'O Jogador O Ganhou!';
         lblJogadas.innerText = '';
-        //alert('O Jogador O ganhou!')
+        return;
     }
     if(btn2=='O' && btn5=='O' && btn8=='O'){
         finalJogo = true;
         lblJogador.innerText = 'O Jogador O Ganhou!';
         lblJogadas.innerText = '';
-        //alert('O Jogador O ganhou!')
+        return;
     }
     if(btn3=='O' && btn6=='O' && btn9=='O'){
         finalJogo = true;
         lblJogador.innerText = 'O Jogador O Ganhou!';
         lblJogadas.innerText = '';
-        //alert('O Jogador O ganhou!')
+        return;
     }
+
+    // Verifica se aconteceu empate
+    if(jogadas==9){
+        finalJogo = true;
+        lblJogador.innerText = "Empate!";
+        lblJogadas.innerText = "";
+    }
+
+    lblJogadas.innerText = '(' + (jogadas+1) + 'ª Jogada)';
 }
