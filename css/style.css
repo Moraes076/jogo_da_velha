@@ -15,8 +15,8 @@ main {
     font-size: 100px;
 }
 body {
-    background-image: url(https://media.istockphoto.com/id/989794366/pt/vetorial/tic-tac-toe-back-to-school-background-doodle-tic-tac-toe-game-pen-and-pencil-vector.jpg?s=170667a&w=0&k=20&c=cBAKHrPnmn0X3K0Bo0Mm8BB3iEQf1UNUVWq8UF2BGc4=);
-    backdrop-filter: blur(2px);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB18DzQkdv4e7rs5ldyMZHEGcs0Tom4hIf8dHaqtCRs9o-gDJgKie4PrzEzk9yBrmSvNo&usqp=CAU);
+    backdrop-filter: blur(1px);
     height: 705px;
     border-radius: 20px;
 }

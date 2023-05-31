@@ -14,11 +14,10 @@ let finalJogo = false;
 
 // Click botão 1
 function clickBtn1(){
-    jogadas++;
-    
     let btn = document.getElementById('btn1');
 
     if(btn.value == " " && !finalJogo) {
+        jogadas++;
         if (controle == 0){
             controle = 1;
             btn.value = "X";
@@ -35,11 +34,10 @@ function clickBtn1(){
 
 // Click botão 2
 function clickBtn2(){
-    jogadas++;
-
     let btn = document.getElementById('btn2');
 
     if(btn.value == ' ' && !finalJogo) {
+        jogadas++;
         if (controle == 0){
             controle = 1;
             btn.value = "X";
@@ -56,11 +54,10 @@ function clickBtn2(){
 
 //Click botão 3
 function clickBtn3(){
-    jogadas++;
-    
     let btn = document.getElementById('btn3');
 
     if(btn.value == ' ' && !finalJogo) {
+        jogadas++;
         if (controle == 0){
             controle = 1;
             btn.value = "X";
@@ -77,11 +74,10 @@ function clickBtn3(){
 
 //Click botão 4
 function clickBtn4(){
-    jogadas++;
-    
     let btn = document.getElementById('btn4');
 
     if(btn.value == ' ' && !finalJogo) {
+        jogadas++;
         if (controle == 0){
             controle = 1;
             btn.value = "X";
@@ -93,15 +89,15 @@ function clickBtn4(){
         }
     }
 
+    verificaGanhador() 
 }
 
 //Click botão 5
 function clickBtn5(){
-    jogadas++;
-    
     let btn = document.getElementById('btn5');
 
     if(btn.value == ' ' && !finalJogo) {
+        jogadas++;
         if (controle == 0){
             controle = 1;
             btn.value = "X";
@@ -118,11 +114,10 @@ function clickBtn5(){
 
 //Click botão 6
 function clickBtn6(){
-    jogadas++;
-    
     let btn = document.getElementById('btn6');
 
     if(btn.value == ' ' && !finalJogo) {
+        jogadas++;
         if (controle == 0){
             controle = 1;
             btn.value = "X";
@@ -139,11 +134,10 @@ function clickBtn6(){
 
 //Click botão 7
 function clickBtn7(){
-    jogadas++;
-    
     let btn = document.getElementById('btn7');
 
     if(btn.value == ' ' && !finalJogo) {
+        jogadas++;
         if (controle == 0){
             controle = 1;
             btn.value = "X";
@@ -160,11 +154,10 @@ function clickBtn7(){
 
 //Click botão 8
 function clickBtn8(){
-    jogadas++;
-    
     let btn = document.getElementById('btn8');
 
     if(btn.value == ' ' && !finalJogo) {
+        jogadas++;
         if (controle == 0){
             controle = 1;
             btn.value = "X";
@@ -181,11 +174,10 @@ function clickBtn8(){
 
 //Click botão 9
 function clickBtn9(){
-    jogadas++;
-    
     let btn = document.getElementById('btn9');
 
     if(btn.value == ' ' && !finalJogo) {
+        jogadas++;
         if (controle == 0){
             controle = 1;
             btn.value = "X";
@@ -311,6 +303,55 @@ function verificaGanhador() {
         lblJogador.innerText = "Empate!";
         lblJogadas.innerText = "";
     }
+    if(controle==0) {
+        lblJogador.innerText = 'Jogador X';
+    } else {
+        lblJogador.innerText = 'Jogador 0';
+    }
 
     lblJogadas.innerText = '(' + (jogadas+1) + 'ª Jogada)';
+}
+
+// Click do botão Reiniciar
+function clickReiniciar() {
+btn1 = 0;
+btn2 = 0;
+btn3 = 0;
+btn4 = 0;
+btn5 = 0;
+btn6 = 0;
+btn7 = 0;
+btn8 = 0;
+btn9 = 0;
+controle = 0;
+jogadas = 0;
+finalJogo = false;
+
+// Reiniciar Botões
+let b1 = document.getElementById('btn1');
+let b2 = document.getElementById('btn2');
+let b3 = document.getElementById('btn3');
+let b4 = document.getElementById('btn4');
+let b5 = document.getElementById('btn5');
+let b6 = document.getElementById('btn6');
+let b7 = document.getElementById('btn7');
+let b8 = document.getElementById('btn8');
+let b9 = document.getElementById('btn9');
+
+b1.value = ' ';
+b2.value = ' ';
+b3.value = ' ';
+b4.value = ' ';
+b5.value = ' ';
+b6.value = ' ';
+b7.value = ' ';
+b8.value = ' ';
+b9.value = ' ';
+
+//Reiniciar Label
+let lblJogador = document.getElementById('lblJogador');
+let lblJogadas = document.getElementById('lblJogadas');
+
+lblJogador.innerText = 'Jogador X';
+lblJogadas.innerText = '(1ª Jogada)';
 }
