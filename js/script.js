@@ -300,9 +300,11 @@ function verificaGanhador() {
     // Verifica se aconteceu empate
     if(jogadas==9){
         finalJogo = true;
-        lblJogador.innerText = "Empate!";
+        lblJogador.innerText = "Velha!";
         lblJogadas.innerText = "";
+        return;
     }
+    
     if(controle==0) {
         lblJogador.innerText = 'Jogador X';
     } else {
