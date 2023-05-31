@@ -2,6 +2,7 @@ main {
     text-align: center;
     font-family: Comic Sans MS, Comic Sans, cursive;
     font-size: 25px;
+    color: white;
 }
 
 .tabuleiro div input {
@@ -13,10 +14,20 @@ main {
     font-size: 30px;
     cursor: pointer;
     font-size: 100px;
+    background-color: black;
+    color: white;
 }
 body {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB18DzQkdv4e7rs5ldyMZHEGcs0Tom4hIf8dHaqtCRs9o-gDJgKie4PrzEzk9yBrmSvNo&usqp=CAU);
+    background-image: url(https://wallpaperaccess.com/full/7175841.jpg);
     backdrop-filter: blur(1px);
     height: 705px;
     border-radius: 20px;
+    background-size: 100%;
+}
+.reiniciar {
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 25px;
 }
